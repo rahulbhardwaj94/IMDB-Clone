@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+
+<header>
+  <div class="logo-div">
+    <abbr title="Jarvis">
+      <a href="/">
+      <img src="images/3d-movie.png" alt="" class="logo" width="90" height="90">
+      </a>
+    </abbr>
+  </div>
+  <div class="nav-bar">
+    <ul>
+      <a class="btn btn-dark btn-lg" href="/logout" role="button">
+        <button>log out</button></a>
+    </ul>
+  </div>
+</header>
+
+<div class="login-box">
+  <form action="/search" method="get">
+    <div class="user-box">
+      <input type="search" name="movie" required="" size="10">
+      <label>Search</label>
+      <a class="searchAnchor" href="/search">
+        <button  type="submit">
+          <img class="notransition" id="loading-image" src="./images/searchIcon.gif" alt="Loading.."  />
+        </button>
+      </a>
+      </div>
+
+  </form>
+</div>
+
+<script>
+  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1629224597110-e90e08fbe62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80')"
+</script>
+
+
+<%- include('partials/footer') %>

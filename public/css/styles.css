@@ -1,0 +1,256 @@
+body {
+  background-image: url('https://cutewallpaper.org/23/tony-stark-wallpaper-4k/2352510758.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+img .logo {
+  display: flex;
+  float: left;
+  color: white;
+  z-index: 10;
+
+}
+
+.nav-bar {
+  display: flex;
+  float: right;
+  color: white;
+  align-items: center;
+  margin-left: 85rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar li a {
+  margin-left: 1rem;
+  padding: 0.5rem;
+
+}
+
+button {
+  position: relative;
+  padding: 1rem;
+  font-family: cursive;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.8s;
+  text-transform: uppercase;
+  color: rgb(166, 208, 250);
+}
+
+button:hover {
+  transition: 0.4s;
+  transform: translate(-5px, -5px);
+  background-color: rgb(20, 19, 19);
+  color: rgb(245, 6, 6);
+  letter-spacing: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+
+button:active {
+  transition: 0.8s;
+  transform: translate(5px, 5px);
+  background-color: white;
+  color: rgb(241, 9, 9);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+/* Image - play */
+
+.play{
+  z-index: 5;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 2rem;
+  left: 8rem;
+  animation-name: scale;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+  0%, 100%{
+    transform: scale(1) translateX(90px);
+  }
+  25%{
+    transform:scale(1.4) rotate(270deg);
+
+  }
+  50%{
+    transform:scale(2);
+  }
+  75%{
+    transform:scale(1.4) translate(-50px);
+  }
+}
+
+
+/* h1 */
+
+h1 {
+  color: rgb(211, 206, 201);
+  position: absolute;
+  bottom: 3.5rem;
+  right: 6rem;
+  transition: 1s;
+}
+
+
+h1:hover {
+  color: red;
+  transform: translateX(30px) rotate(-7deg);
+  bottom: 6rem;
+  text-decoration: overline;
+  transition: 0.7s;
+}
+
+/* Register Page */
+
+
+.card{
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  background: transparent;
+  position: relative;
+  top: 50%;
+  left: 30%;
+}
+
+.social-block {
+  position: relative;
+  top: 70%;
+  left: 80%;
+}
+.social-block:hover a{
+  background-color: red;
+  color: white;
+}
+
+/* Search Bar */
+
+
+.login-box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 55rem;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .6);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 20px;
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transition: 0.5s;
+  
+}
+
+.login-box .user-box {
+  position: relative;
+  display: flex;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 2rem;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #cee2ff;
+  font-size: 16px;
+  
+}
+
+.login-box form a {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px
+}
+
+
+.login-box a button {
+  padding: 5px;
+  background-color: rgba(252, 248, 248, 0.8);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.searchAnchor{
+  cursor: pointer;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+
+.searchAnchor #loading-image{
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+}
+
+
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+      top: -25%;
+  }
+
+  100% {
+      opacity: 1;
+      top: 25%;
+  }
+}

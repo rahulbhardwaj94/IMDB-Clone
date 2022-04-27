@@ -1,0 +1,145 @@
+.outer-container {
+    /* border: 1rem solid red; */
+    border-radius: 10%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1566305977571-5666677c6e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=645&q=80');
+    background-size: contain    ;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+.image-container img {
+    width: 60rem;
+    height: 60rem;
+    position: absolute;
+    animation-name: right-left;
+    border-radius: 20px;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: 1s;
+}
+
+.movieDetails {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 60rem;
+    height: 35rem;
+    padding: 40px;
+    color: white;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .7);
+    border-radius: 20px;
+    animation-name: left-right;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: 1s;
+}
+
+.movieDetails .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.movieDetails .shortDetails {
+    margin-top: 0;
+    text-align: center;
+}
+
+.movieDetails .ratings {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.plot {
+    margin-left: 3rem;
+}
+
+
+.movieDetails .crew {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.castHeading {
+    font-size: 1.5rem;
+}
+
+.movieDetails .cast {
+    margin: 1rem;
+    margin-left: 3rem;
+    /* text-align: center;   */
+}
+
+.btn {
+    background: white;
+    box-sizing: border-box;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .7);
+    transition: 1s;
+}
+
+.btn:hover{
+    letter-spacing: 2px;
+    background-color: rgb(248, 108, 108);
+    font-weight: bold;
+    color: white;
+    transform: translate(-5px, -5px);
+    transition: 0.5s;
+}
+
+
+@keyframes left-right {
+    0% {
+        opacity: 0;
+        left: -25%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 70%;
+    }
+}
+
+
+@keyframes right-left {
+    0% {
+        opacity: 0;
+        left: 50%;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        top: -25%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 25%;
+    }
+}

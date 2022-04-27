@@ -1,0 +1,64 @@
+<%- include('partials/searchHeader') %>
+
+<div class="outer-container">
+  <div class="image-container">
+    <img class="image" src="<%= Poster%>" />
+  </div>
+  <div class="movieDetails">
+    <div class="heading">
+      <h2>
+        <%=Title%>
+        <span>(<%=Year%>)</span>
+      </h2>
+    </div>
+    <div class="shortDetails">
+      <span class="certi"><%=Rated%></span>
+      <span>◾ <%= Released %></span>
+      <span>◾ <%= Genre %> </span>
+      <span>◾ <%= Runtime%></span>
+    </div>
+
+    <div class="ratings">
+      <div class="imdb">
+        <div>IMDB</div>
+        <div><%=imdbValue%></div>
+      </div>
+      <div class="rotten">
+        <div><%=rottenSource%></div>
+        <div><%=rottenValue%></div>
+      </div>
+      <div class="metacritic">
+        <div><%=metaSource%></div>
+        <div><%=metaValue%></div>
+      </div>
+    </div>
+
+    <div class="plot">
+      <h4>Overview</h4>
+      <h5><%= Plot %></h5>
+    </div>
+    <div class="crew">
+      <div class="director">
+        <div>Director</div>
+        <div><%=Director%></div>
+      </div>
+      <div class="writers">
+        <div>Writers</div>
+        <div><%=Writer%></div>
+      </div>
+    </div>
+    <div class="cast">
+      <div class="castHeading">Cast</div>
+      <h4><%=Actors%></h4>
+    </div>
+    <a href="#">
+        <button class="btn">ADD TO FAVOURITE</button>
+    </a>
+  </div>
+  
+</div>
+
+
+
+
+<%- include('partials/footer') %>
